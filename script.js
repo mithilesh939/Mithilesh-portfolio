@@ -78,22 +78,52 @@ if(pCard){
 
 /* ================= NARRATION TOGGLE ================= */
 (function sound(){
-  const btn = document.getElementById('soundToggle');
-  const audio = document.getElementById('narration');
+
+  const btn = document.getElementById("soundToggle");
+  const audio = document.getElementById("narration");
+
+  // FIX: if either element is missing (e.g. <audio> tag is commented out
+  // in the HTML), stop here instead of throwing — otherwise every line
+  // below this function in the file never runs.
+  if (!btn || !audio) {
+    console.warn("Narration controls not found — skipping sound setup.");
+    return;
+  }
+
   let playing = false;
-  btn.addEventListener('click', ()=>{
-    if(!playing){ audio.play().catch(()=>{}); playing=true; btn.classList.add('playing'); }
-    else { audio.pause(); playing=false; btn.classList.remove('playing'); }
+
+  btn.addEventListener("click", () => {
+
+    if (!playing) {
+      audio.play().catch(()=>{});
+      playing = true;
+      btn.classList.add("playing");
+    } else {
+      audio.pause();
+      playing = false;
+      btn.classList.remove("playing");
+    }
+
   });
-  audio.addEventListener('ended', ()=>{ playing=false; btn.classList.remove('playing'); });
+
+  audio.addEventListener("ended", () => {
+    playing = false;
+    btn.classList.remove("playing");
+  });
+
 })();
-
 /* ================= RESUME BUTTON ================= */
-document.getElementById('resumeBtn').addEventListener('click', (e)=>{
-  e.preventDefault();
-  alert('Add your resume PDF to the assets folder and point this button at it — e.g. href="assets/resume.pdf".');
-});
+const resumeBtn = document.getElementById("resumeBtn");
 
+if (resumeBtn) {
+
+    resumeBtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+
+        alert("Add your resume PDF...");
+    });
+
+}
 /* ================= THINKING PROCESS DATA ================= */
 const THINKING = [
   ['Observation','Watching how people actually behave, not how they say they behave.'],
@@ -251,12 +281,12 @@ function renderVentureList(listData, containerId) {
     if(v.long){
       longHtml = '<div class="venture-long">' + v.long.map(l=>`<h5>${l[0]}</h5><p>${l[1]}</p>`).join('') + '</div>';
     }
-    
+
     let headContent = `<div class="venture-name">${v.name}</div>`;
     if(v.link) {
       headContent = `<a href="${v.link}" target="_blank" class="venture-name" style="text-decoration:underline; text-decoration-color:var(--neon);">${v.name} <span style="font-size:18px">↗</span></a>`;
     }
-    
+
     el.innerHTML = `
       <div class="venture-head">
         ${headContent}
@@ -284,7 +314,7 @@ function renderVentureList(listData, containerId) {
       </div>
       ${longHtml}
     `;
-    
+
     const readMoreBtns = el.querySelectorAll('.read-more');
     readMoreBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -396,12 +426,12 @@ function fbCardHtml(t){
   if(!track) return;
   const rowHtml = TESTIMONIALS.map(fbCardHtml).join('');
   track.innerHTML = rowHtml + rowHtml + rowHtml; // multiple copies for seamless scroll
-  
+
   let isDown = false;
   let startX;
   let scrollLeft;
   let autoScroll = true;
-  
+
   track.addEventListener('mousedown', (e) => {
     isDown = true;
     autoScroll = false;
