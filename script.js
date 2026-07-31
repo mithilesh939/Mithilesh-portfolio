@@ -358,49 +358,49 @@ const TESTIMONIALS = [
   {
     name:'R. Raghuttama Rao', title:'CEO, GDC', stars:5,
     quote:'"A strong foundation with genuine founder intuition for solving a meaningful problem."',
-    photo:'assets/R. Raghuttama Rao.png', poster:'assets/R.RAGHUTTAMA RAO (FEEDBACK).jpeg',
+    photo:'assets/r-raghuttama-rao.png', poster:'assets/r-raghuttama-rao-feedback.jpeg',
     link:'https://gdciitm.org/teams/r-raghuttama-rao/'
   },
   {
     name:'K. K. Raman', title:'Retired, Apollo Global, India', stars:5,
     quote:'"A clean, well-structured value proposition that is realistic and investor-ready."',
-    photo:'assets/kk raman.png', poster:'assets/kk raman (feedback).jpeg',
+    photo:'assets/kk-raman.png', poster:'assets/kk-raman-feedback.jpeg',
     link:'https://acr.iitm.ac.in/latestdasa/shri-komal-krishnamurthy-raman/'
   },
   {
     name:'Ponguri Parthasarathy', title:'Business Mentor · Ex-Sanofi · Startups', stars:5,
     quote:'"Customer relationships, partnerships, and revenue model all reflect thoughtful business thinking."',
-    photo:'assets/Ponguri Parthasarathy.jpeg', poster:'assets/ponguri parthasarathy1(feedback).jpeg',
+    photo:'assets/ponguri-parthasarathy.jpeg', poster:'assets/ponguri-parthasarathy1-feedback.jpeg',
     link:'https://www.linkedin.com/in/ponguriparthasarathy/'
   },
   {
     name:'J. Murali Krishnan', title:'Professor, Dept. of Civil Engineering, IIT Madras', stars:5,
     quote:'"A thoughtful engagement strategy with a compelling founder story — the origin story gives the product real soul."',
-    photo:'assets/J. Murali Krishnan.jpg', poster:'assets/j. Murali Krishnan( feedback).jpeg',
+    photo:'assets/j-murali-krishnan.jpg', poster:'assets/j-murali-krishnan-feedback.jpeg',
     link:'https://home.iitm.ac.in/jmk/home'
   },
   {
     name:'Gopal Raman', title:'Formerly President, Hinduja Group', stars:5,
     quote:'"A sharp, entrepreneurial approach to business problem-solving, reflecting genuine strategic maturity."',
-    photo:'assets/Gopal Raman.jpeg', poster:'assets/Gopal Raman( feedback).jpeg',
+    photo:'assets/gopal-raman.jpeg', poster:'assets/gopal-raman-feedback.jpeg',
     link:'https://www.linkedin.com/in/ponguriparthasarathy/'
   },
   {
     name:'Prof. Satyanarayanan S', title:'Co-Founder, Next Carbon', stars:5,
     quote:'"Customer discovery done right — grounded, practical workflows paired with structured assumptions show real thinking."',
-    photo:'assets/Prof. Satyanarayanan S.jpg', poster:'assets/Prof. Satyanarayanan S (feedback).jpeg',
+    photo:'assets/prof-satyanarayanan-s.jpg', poster:'assets/prof-satyanarayanan-s-feedback.jpeg',
     link:'https://www.linkedin.com/in/satyaseshadri/?skipRedirect=true'
   },
   {
     name:'Shuchi Bhatnagar', title:'Pitch Deck Expert (100+) · Independent Director', stars:5,
     quote:'"A polished, investor-caliber pitch deck — the narrative and positioning land with real clarity and emotional resonance."',
-    photo:'assets/Shuchi Bhatnagar.jpeg', poster:'assets/Shuchi Bhatnagar(feedback).jpeg',
+    photo:'assets/shuchi-bhatnagar.jpeg', poster:'assets/shuchi-bhatnagar-feedback.jpeg',
     link:'https://www.linkedin.com/in/shuchi-bhatnagar-4baa6238/?skipRedirect=true&originalSubdomain=in'
   },
   {
     name:'Ponguri Parthasarathy', title:'Business Plan Review', stars:5,
     quote:'"Sanrathi\'s business plan tells a consistent, credible story — real market understanding reflected across the go-to-market strategy."',
-    photo:'assets/Ponguri Parthasarathy.jpeg', poster:'assets/ponguri parthasarathy2(feedback).jpeg',
+    photo:'assets/ponguri-parthasarathy.jpeg', poster:'assets/ponguri-parthasarathy2-feedback.jpeg',
     link:'https://www.linkedin.com/in/ponguriparthasarathy/'
   },
 ];
